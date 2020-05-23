@@ -1,0 +1,67 @@
+Legend :
+
+Number of column for each line : 40
+Number of line : 21
+
+Tiles :
+    0 grass.
+    1 place to put the towers.
+    2 linear path. ->
+    3 linear path. <-
+    4 path y. up
+    5 path y. down
+    L top left path. ->
+    G top left path. down
+    R top right path. <-
+    D top right path. down
+    l down left path. ->
+    g down left path. up
+    r down rigth path. <-
+    d down right path. up
+    X enemy spawn. ->
+    c castle(base).
+    
+    Decoration :
+        s sand.
+        n stone.
+        h hut.
+        t first type of tree.
+        e second type of tree.
+        E third type of tree.
+
+You can also custom the waves !
+Each waves is a line after the map, the wave is cosntitued like that :
+
+[Type of monster]::[Number of Monster]||[Type of...]...
+
+Here are the different types :
+    1 - Goblin, low life but run fast.
+    2 - Croc, medium life, medium speed.
+    3 - Flying Horror, slow and hard to take down.
+
+Exemple : 
+
+0000000000000000000000000000000000000000    |
+0000000000000000000000000000000000000000    |
+0000000000000000000000000000000000000000    |
+0000000000000000000000000000000000000000    |
+0000000000000000000000000000000000000000    |
+0000000000000000000000000000000000000000    |
+0000000000000000000000000000000000000000    |
+0000000000000000000000000000000000000000    |
+0000000000000000000000000000000000000000    |
+0000000000000000000000000000000000000000    |
+0000000000000000000000000000000000000000    |
+X222222222222222222222222222222222222c00    |   <----- Here is the map (it's just a linear path with grass)
+0000000000000000000000000000000000000000    |
+0000000000000000000000000000000000000000    |
+0000000000000000000000000000000000000000    |
+0000000000000000000000000000000000000000    |
+0000000000000000000000000000000000000000    |
+0000000000000000000000000000000000000000    |
+0000000000000000000000000000000000000000    |
+0000000000000000000000000000000000000000    |
+0000000000000000000000000000000000000000    |
+
+1::4||2::1||1::2                            |   <----- And here are the waves, the first one is composed of 4 goblins, one croc and another 2 goblins.  
+3::1                                        |        | The second wave contain one flying horror.
